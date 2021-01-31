@@ -1,0 +1,44 @@
+<!--pages/test/test.wxml-->
+
+<view class="{{config.theme}}">
+    <swiper class="screen-swiper round-dot" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
+        <swiper-item wx:for="{{swiperList}}" wx:key>
+            <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+            <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+        </swiper-item>
+    </swiper>
+
+
+<view class="cu-list menu-avatar">
+    <view class="cu-item">
+        <view class="cu-avatar round lg" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg);"></view>
+        <view class="content">
+            <view class="text-grey">
+                  <text class="cu-tag round " wx:if="{{userInfo}}">登陆</text>
+                    <open-data class="cu-tag round " type="userNickName"></open-data>
+            </view>
+            <view class="text-gray text-sm flex">
+                <text class="text-cut">
+                                <text class="cuIcon-infofill text-red  margin-right-xs"></text> 我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。
+                </text>
+            </view>
+        </view>
+        <view class="action">
+        <view class="text-grey text-xs">22:20</view>
+        <view class="cu-tag round bg-grey sm">5</view>
+        </view>
+    </view>
+</view>
+
+</view>
+
+
+
+
+
+
+
+
+
+
+<dialog-cover show="{{config.cover?true:false}}" src="{{config.cover}}"></dialog-cover>

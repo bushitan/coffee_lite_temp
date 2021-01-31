@@ -1,0 +1,14 @@
+<!--pages/test/test.wxml-->
+
+
+
+<view class="theme-olive">
+    <view  wx:for="{{list}}" wx:for-index="i" class="padding-lr-sm margin-top-sm">
+        <view class="">{{item.son}}</view>
+        <button class="cu-btn  theme-bg margin-xs"  wx:for="{{item.nodes}}"  wx:for-item="node"  wx:for-index="j"  
+            catchtap="toNav" data-i="{{i}}" data-j="{{j}}">{{node.name}}</button>
+    </view>
+</view>
+
+
+<dialog-cover show="{{config.cover?true:false}}" src="{{config.cover}}"></dialog-cover>

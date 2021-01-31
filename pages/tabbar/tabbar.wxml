@@ -1,0 +1,57 @@
+
+<view class="{{config.theme}}">
+    <view hidden="{{PageCur=='index'? false :true}}">
+        <index ></index>
+    </view>
+    <view hidden="{{PageCur=='ui'? false :true}}">
+        <ui ></ui>
+    </view>
+    <view hidden="{{PageCur=='temp'? false :true}}">
+        <temp ></temp>
+    </view>
+
+
+        <!-- <index wx:if="{{PageCur=='index'}}"></index>
+
+        <temp  wx:if="{{PageCur=='temp'}}"></temp> -->
+
+    <view class="cu-bar tabbar bg-white shadow foot">
+        <view class="action" bindtap="NavChange" data-cur="{{item.page}}" wx:for="{{config.tabbar.list}}">
+            <view class='cuIcon-cu-image'>
+            <image src="{{PageCur == item.page? item.selectedIconPath : item.iconPath}} "></image>
+            </view>
+            <view class="{{PageCur== item.page? config.tabbar.selectedColor : config.tabbar.color}}">{{item.text}}</view>
+        </view>    
+    </view>
+
+
+    <!-- <component wx:if="{{PageCur=='component'}}"></component>
+    <plugin wx:if="{{PageCur=='plugin'}}"></plugin>
+    <about wx:if="{{PageCur=='about'}}"></about> -->
+    <!-- <view class="cu-bar tabbar bg-white shadow foot">
+    <view class="action" bindtap="NavChange" data-cur="index">
+        <view class='cuIcon-cu-image'>
+        <image src="{{PageCur=='index'?'_cur':''}} "></image>
+        </view>
+        <view class="{{PageCur=='index'?'theme-text':'text-gray'}}">首页</view>
+    </view>
+    <view class="action" bindtap="NavChange" data-cur="temp">
+        <view class='cuIcon-cu-image'>
+        <image src="/images/tabbar/component{{PageCur=='temp'?'_cur':''}}.png"></image>
+        </view>
+        <view class="{{PageCur=='temp'? 'theme-text':'text-gray'}} ">测试</view>
+    </view> -->
+    <!-- <view class="action" bindtap="NavChange" data-cur="plugin">
+        <view class='cuIcon-cu-image'>
+        <image src="/images/tabbar/plugin{{PageCur=='plugin'?'_cur':''}}.png"></image>
+        </view>
+        <view class="{{PageCur=='plugin'?'text-green':'text-gray'}}">扩展</view>
+    </view>
+    <view class="action" bindtap="NavChange" data-cur="about">
+        <view class='cuIcon-cu-image'>
+        <image src="/images/tabbar/about{{PageCur=='about'?'_cur':''}}.png"></image>
+        </view>
+        <view class="{{PageCur=='about'?'text-green':'text-gray'}}">关于</view>
+    </view> -->
+    <!-- </view> -->
+</view>

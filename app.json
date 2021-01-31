@@ -1,0 +1,42 @@
+{
+    "pages":[
+        "pages/route/route",
+        "pages/tabbar/tabbar",
+        "pages/index/index",
+        "pages/ui/ui",
+        "pages/test/test"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "backgroundColor": "#ffffff",
+        "navigationBarBackgroundColor": "#efaf30",
+        "navigationBarTitleText": "5G信号分析系统",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+        "color": "#bfbfbf",
+        "selectedColor": "#333333",
+        "borderStyle": "white",
+        "backgroundColor": "#ffffff",
+        "list": [
+            {
+                "pagePath": "pages/route/route",
+                "iconPath": "/images/icon/prize_un.png",
+                "selectedIconPath": "/images/icon/prize.png",
+                "text": "集点卡"
+            },
+            {
+                "pagePath": "pages/test/test",
+                "iconPath": "/images/icon/mall_un.png",
+                "selectedIconPath": "/images/icon/mall.png",
+                "text": "测试"
+            }
+          
+        ]
+    },
+    "usingComponents": {
+        "dialog": "components/dialog/dialog",
+        "dialog-cover": "components/dialog-cover/dialog-cover"
+    },
+    "sitemapLocation": "sitemap.json"
+}
