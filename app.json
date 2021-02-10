@@ -35,6 +35,7 @@
         ]
     },
     "usingComponents": {
+        "coupon":"components/coupon/coupon",
         "dialog": "components/dialog/dialog",
         "dialog-cover": "components/dialog-cover/dialog-cover"
     },

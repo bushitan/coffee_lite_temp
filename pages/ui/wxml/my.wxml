@@ -1,0 +1,66 @@
+
+
+
+    <view class="cu-list menu-avatar">
+        <view class="cu-item">
+            <image class="cu-avatar round lg" src="https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg"></image>
+            <view class="content">
+                <view class="text-grey">
+                    <text class="cu-tag round " wx:if="{{userInfo}}">登陆</text>
+                    <open-data class="" type="userNickName"></open-data>
+                </view>
+                <view class="text-gray text-sm flex">
+                    <text class="text-cut  cu-tag round theme-bg">
+                        <text class=" text-white  ">充值会员</text> 
+                    </text>
+                </view>
+            </view>
+            <view class="action basis-sm flex justify-end padding-right-sm">     
+                <button class="cu-btn round theme-bg sm text-white">充值会员 </button>  
+            </view>                     
+        </view>
+    </view>
+<view class="cu-list menu sm-border">
+    <view class="cu-item arrow">
+        <view class="content">
+            <text class="cuIcon-circlefill text-grey"></text>
+            <text class="">我的订单</text>
+        </view>
+    </view>
+    <view class="cu-item arrow">
+        <view class="content">
+            <text class="cuIcon-circlefill text-grey"></text>
+            <text class="">我的积分</text>
+        </view>
+    </view>
+    <view class="cu-item arrow">
+        <view class="content">
+            <text class="cuIcon-circlefill text-grey"></text>
+            <text class="">我的券包</text>
+        </view>
+    </view>
+    <view class="cu-item arrow">
+        <view class="content">
+            <text class="cuIcon-circlefill text-grey"></text>
+            <text class="">我的集点</text>
+        </view>
+    </view>
+</view>
+
+
+<view class=" text-xl text-bold padding-lr margin-top">超值立减券</view>
+<view class="cu-card article ">
+    <view class="cu-item shadow padding-top">
+        <view class="content ">
+            <image src="https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg" mode="aspectFill"></image>
+            <view class="desc">
+                <view class="text-xl text-bold"> 5元全包</view>
+                <view class="text-df text-gray "> 充值500积分</view>
+                <view class="flex justify-between align-center">
+                    <view class=" text-red">价值￥20</view>
+                    <button class='cu-btn round bg-red text-white'>4元抢</button>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

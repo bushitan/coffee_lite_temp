@@ -1,0 +1,80 @@
+
+    <swiper class="screen-swiper square-dot" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
+        <swiper-item wx:for="{{swiperList}}" wx:key>
+            <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+            <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+        </swiper-item>
+    </swiper>
+    <view class="pg-radius-card bg-white " style=""></view>
+
+    <view class="cu-list menu-avatar">
+        <view class="cu-item">
+            <image class="cu-avatar round lg" src="https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg"></image>
+            <view class="content">
+                <view class="text-grey">
+                    <text class="cu-tag round " wx:if="{{userInfo}}">登陆</text>
+                    <open-data class="" type="userNickName"></open-data>
+                </view>
+                <view class="text-gray text-sm flex">
+                    <text class="text-cut  cu-tag round theme-bg">
+                        <text class=" text-white  ">充值会员</text> 
+                    </text>
+                </view>
+            </view>
+            <view class="action">
+                <view class="text-black text-bold text-xl">0</view>
+                <view class="text-sm">集点</view>
+            </view>
+            <view class="action">
+                <view class="text-black text-bold text-xl">0</view>
+                <view class="text-sm">券包</view>
+            </view>
+            <view class="action">
+                <view class="text-black text-bold text-xl">0</view>
+                <view class="text-sm">充值</view>
+            </view>
+        </view>
+    </view>
+
+    <view class="padding-lr margin-top">
+        <view class="padding-sm flex justify-between align-center margin-top  bg-white radius text-sm">
+            <view class="title">
+                <text class="cuIcon-commentfill theme-text margin-right-xs"></text>
+                <text class="picker"> 禁止换行，超出容器部分会以 禁止换行 </text>
+            </view>           
+            <view class="cuIcon-right text-gray"></view>
+        </view>
+    </view>
+
+    
+    <view class="padding-lr margin-top">
+        <view class=" flex justify-between align-center margin-top   radius text-sm">
+            <view class="title">
+                <text class="cuIcon-shopfill theme-text margin-right-xs"></text>
+                <text class="text-gray">鲤湾店【距离200m】</text>
+            </view>           
+            <view class="text-gray">
+                更多门店 <text class="cuIcon-right"></text>
+            </view>
+        </view>
+    </view>
+
+    
+    <view class=" padding-lr margin-top-xs">
+        <view class="grid col-2  text-center"  >
+            <view class="padding-right" >            
+                <view class="bg-yellow pg-radius" style="height:380rpx;" >
+                     <image class="block" src="https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg" mode="widthFix"></image>
+                </view>               
+            </view>
+            <view class="" >
+                <view class="bg-cyan pg-radius" style="height:175rpx;" >1</view>
+                <view class="bg-cyan pg-radius  margin-top"  style="height:175rpx;"  >1</view>
+            </view>
+        </view>
+    </view>
+
+    
+    <view class="padding-lr margin-top pg-radius">
+        <image class="block pg-radius" src="https://ossweb-img.qq.com/images/lol/web201310/skin/big84000.jpg" mode="widthFix"></image>
+    </view>

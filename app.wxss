@@ -23,6 +23,7 @@
 .pg-space-xxl { height: 60px; }
 .pg-space-sl { height: 120px; }
 
+.pg-width-full{ width:750rpx; }
 
 .pg-arrow:after{
     display: block;
@@ -49,3 +50,14 @@
     
 }
 
+
+
+.pg-grad1 {
+    width: 100%;
+    height: 100px;
+    background: radial-gradient(circle at right top, transparent 10px,  #28A4F2 0) top left / 60px 51% no-repeat,
+      radial-gradient(circle at right bottom, transparent 10px,  #28A4F2 0) bottom left /60px 51% no-repeat,
+      radial-gradient(circle at left top, transparent 10px, #eeeeee 0) top right /190px 51% no-repeat,
+      radial-gradient(circle at left bottom, transparent 10px, #eeeeee 0) bottom right /190px 51% no-repeat;
+    filter: drop-shadow(3px 3px 3px rgba(0,0,0,.3));
+}

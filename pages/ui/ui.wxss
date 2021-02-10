@@ -19,3 +19,9 @@
     right:0;
     height:15rpx; 
 }
+
+page{
+    /* background-color: #ffffff; */
+}
+
+

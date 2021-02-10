@@ -36,6 +36,21 @@ Component({
             type: 'image',
             url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big99008.jpg'
         }],
+
+        pickerDevice:['华为监测仪','中兴监测仪'],
+        pickerWCS:["WGS-84","CGCS2000"],
+        pickerDate:[
+            "2021-1-29",
+            "2021-1-30",
+            "2021-1-31",
+            "2021-2-1",
+            "2021-2-2",
+            "2021-2-3",
+            "2021-2-4",
+            "2021-2-5",
+            "2021-2-6",
+            "2021-2-7",
+        ]
     },
     behaviors: [app.behaviors.config, ],
 

@@ -1,0 +1,30 @@
+
+
+<view class="text-center text-bold text-xxl" style="margin-top:10vh">
+    系统登录
+</view>
+<view class="padding margin-top">
+    <view class="shadow shadow-warp bg-white">
+        <view class="cu-bar search  ">
+            <view class="action">
+                账号
+            </view>
+            <view class="search-form round">
+                <input type="text" placeholder=" 请输入账号" confirm-type="search"></input>
+            </view>
+        </view>
+        <view class="cu-bar search bg-white">
+            <view class="action">
+                密码
+            </view>
+            <view class="search-form round">
+                <input type="text" placeholder=" 请输入密码" confirm-type="search"></input>
+            </view>
+        </view>
+        <view class="padding ">
+            <button class="cu-btn block  bg-yellow text-white round">登录</button>
+        </view>
+    </view>
+
+  
+</view>

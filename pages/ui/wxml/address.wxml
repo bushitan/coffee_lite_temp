@@ -1,0 +1,45 @@
+
+    <!-- 地址 -->
+    <view class="cu-list bg-white padding">
+        <view class="cu-item">
+            <view class="content">
+                <view class="text-grey">
+                    <text class="text-bold">请选择门店</text>
+                    <text class="cuIcon-right "></text>
+                </view>
+                <view class="text-gray text-sm flex">
+                <text class="text-cut">
+                        <text class="cuIcon-locationfill theme-text  margin-right-xs"></text> Seeking鲤湾店
+                </text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="cu-list menu  cu-card ">
+        <view class="cu-item " wx:for="{{[1,2,3]}}">
+            <view class="content padding-tb-sm">
+                <view class="">
+                    <text class="text-bold margin-right-xs">Seeking鲤湾店</text>
+                    <text class="text-bold cu-tag sm  text-red" style="background-color: rgba(204, 69, 59, 0.2)">距离最近</text>
+                </view>
+                <view class="text-gray text-sm flex">
+                    <text class="text-cut">
+                        <text class=" text-gray  margin-right-xs">南宁市青秀区鲤湾路56号</text> 
+                    </text>
+                </view>
+                <view class=" text-sm">
+                    <text class="text-gray margin-right">休息中</text>
+                    <text class="text-gray" >07:30-21:45</text>
+                </view>
+            </view>
+            <view class=" text-xxl">                    
+                <view class=" text-right">                        
+                    <text class="cuIcon-phone theme-text margin-right" ></text>
+                    <text class="cuIcon-location theme-text" ></text>
+                </view>    
+                <view class=" padding-top">
+                    <button class="cu-btn round theme-bg text-white shadow-blur">选择点单</button>
+                </view>
+            </view>
+        </view>
+    </view>
